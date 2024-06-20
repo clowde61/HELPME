@@ -1,0 +1,14 @@
+<h1>App Component</h1>
+
+<div *ngIf="countryInfo">
+  <h2>{{ countryInfo.name }}</h2>
+  <p>Capital: {{ countryInfo.capitalCity }}</p>
+  <p>Region: {{ countryInfo.region.value }}</p>
+  <p>Income Level: {{ countryInfo.incomeLevel.value }}</p>
+  <!-- Display two additional properties of your choice -->
+</div>
+
+<nav>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/world-map" routerLinkActive="active">World Map</a>
+</nav>
